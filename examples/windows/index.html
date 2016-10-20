@@ -6,15 +6,58 @@
     <link rel="stylesheet" type="text/css" href="../../css/platinui.win.css" />
     <style>
         body{
-            padding: 60px;
-            text-align: center;
+            font-size: 12px;
+            line-height: 1.3;
+            max-width: 800px;
+            margin: 0 auto;
         }
+        h1{
+            font-size: 32px;
+            line-height: 1.3;
+            margin: 12px 0;
+        }
+
+        h2{
+            font-size: 28px;
+            line-height: 1.3;
+            margin: 12px 0;
+        }
+
+        ul{
+            list-style-type: circle;
+        }
+        ul li{
+            margin-left: 16px;
+        }
+
+        p{
+            margin: 12px 0;
+        }
+
+        section{
+            padding: 30px 0;
+            border-bottom: #e0e0e0 solid 1px;
+        }
+
     </style>
 </head>
 <body>
+    <section id="home">
+        <h1>PlatinUI - Windows</h1>
+        <p>This is a demostration page of using PlatinUI to create application based on web technologies that will camouflage into Windows UI. Here are the list of UI elements. Click on any of them to go directly on that segment:</p>
+        <p>
+            <ul>
+                <li><a href="#buttons">Buttons</a></li>
+            </ul>
+        </p>
+    </section>
 
-    <button class="default">Default Button</button>
-    <button>Other Button</button>
+    <section id="buttons">
+        <h2>Buttons</h2>
+        <p>These are some button previews.</p>
+        <button class="default">Default Button</button>
+        <button>Other Button</button>
+    </section>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="../../js/platinui.js"></script>
