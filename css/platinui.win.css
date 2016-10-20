@@ -124,11 +124,12 @@ html {
 }
 
 .ui-windows {
+  font-family: "Open Sans", sans-s;
   background: #f0f0f0;
 }
 .ui-windows button, .ui-windows .btn {
   outline: none;
-  font-family: sans-serif;
+  font-family: "Open Sans", sans-s;
   font-size: 11px;
   color: #000000;
   background: #e1e1e1;

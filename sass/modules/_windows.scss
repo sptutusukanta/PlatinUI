@@ -1,4 +1,5 @@
 .ui-windows{
+  font-family: $font-family-base;
   background: $color-base-background;
   @import "../partials/windows/_buttons";
 }
