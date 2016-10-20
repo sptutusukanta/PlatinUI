@@ -1,0 +1,186 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  -moz-user-select: -moz-none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.ui-windows {
+  background: #f0f0f0;
+}
+.ui-windows button, .ui-windows .btn {
+  outline: none;
+  font-family: sans-serif;
+  font-size: 11px;
+  color: #000000;
+  background: #e1e1e1;
+  border: #adadad solid 1px;
+  border-radius: 0;
+  padding: 0 7px;
+  min-width: 64px;
+  height: 21px;
+  position: relative;
+  -moz-transition: background 300ms, border-color 300ms;
+  -o-transition: background 300ms, border-color 300ms;
+  -webkit-transition: background 300ms, border-color 300ms;
+  transition: background 300ms, border-color 300ms;
+}
+.ui-windows button:hover, .ui-windows .btn:hover {
+  background: #e5f1fb;
+  border: #0078d7 solid 1px;
+}
+.ui-windows button:focus:before, .ui-windows .btn:focus:before {
+  content: '';
+  font-size: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border: #000000 dotted 1px;
+}
+.ui-windows button:focus, .ui-windows button.default, .ui-windows .btn:focus, .ui-windows .btn.default {
+  padding: 0 6px;
+  border: #0078d7 solid 2px;
+}
+.ui-windows button.default:focus, .ui-windows .btn.default:focus {
+  padding: 0 6px;
+}
+.ui-windows button.default:active, .ui-windows .btn.default:active {
+  padding: 0 7px;
+}
+.ui-windows button:active, .ui-windows .btn:active {
+  padding: 0 7px;
+  background: #cce4f7;
+  border: #005499 solid 1px;
+}
+.ui-windows button:active:before, .ui-windows .btn:active:before {
+  top: 1px;
+  right: 1px;
+  bottom: 1px;
+  left: 1px;
+}
+.ui-windows.button-non-default-focus button.default, .ui-windows.button-non-default-focus .btn.default {
+  padding: 0 7px;
+  border: #adadad solid 1px;
+}
+
+/*# sourceMappingURL=platinui.win.css.map */

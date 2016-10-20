@@ -1,0 +1,73 @@
+button, .btn{
+  outline: none;
+  font-family: sans-serif;
+  font-size: 11px;
+  color: #000000;
+  background: #e1e1e1;
+  border: #adadad solid 1px;
+  border-radius: 0;
+  padding: 0 7px;
+  min-width: 64px;
+  height: 21px;
+  position: relative;
+  @include transition(background 300ms, border-color 300ms);
+
+  &:hover{
+    background: #e5f1fb;
+    border: #0078d7 solid 1px;
+  }
+
+  &:focus{
+    &:before{
+      content: '';
+      font-size: 0;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      border: #000000 dotted 1px;
+    }
+  }
+
+  &:focus,&.default{
+    padding: 0 6px;
+    border: #0078d7 solid 2px;
+  }
+
+  &.default{
+    &:focus{
+      padding: 0 6px;
+    }
+    &:active{
+      padding: 0 7px;
+    }
+  }
+
+
+  &:active{
+    padding: 0 7px;
+    background: #cce4f7;
+    border: #005499 solid 1px;
+    &:before{
+      top: 1px;
+      right: 1px;
+      bottom: 1px;
+      left: 1px;
+    }
+  }
+}
+
+
+
+&.button-non-default-focus{
+  button, .btn {
+    &.default{
+      padding: 0 7px;
+      border: #adadad solid 1px;
+    }
+    //&:focus, &:active{
+    //  padding: 0 7px;
+    //}
+  }
+}
