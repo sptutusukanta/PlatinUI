@@ -1,0 +1,45 @@
+input {
+  outline: none;
+  font-family: $font-family-base;
+  font-size: 11px;
+  color: #000000;
+  background: #ffffff;
+  border: #adadad solid 1px;
+  border-radius: 0;
+  padding: 8px 4px;
+  min-width: 128px;
+  height: 21px;
+  position: relative;
+
+  @include transition(border-color 300ms);
+
+  &:hover{
+    border: #0078d7 solid 1px;
+  }
+
+  &:focus,&.default{
+    padding: 8px 4px;
+    border: #0078d7 solid 1px;
+  }
+
+  &.default{
+    &:focus{
+      padding: 8px 4px;
+    }
+    &:active{
+      padding: 8px 4px;
+    }
+  }
+
+  &:active{
+    padding: 8px 4px;
+    border: #005499 solid 1px;
+    &:before{
+      border: #000000 dotted 1px;
+      top: 1px;
+      right: 1px;
+      bottom: 1px;
+      left: 1px;
+    }
+  }
+}

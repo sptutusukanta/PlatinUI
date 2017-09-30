@@ -124,12 +124,12 @@ html {
 }
 
 .ui-windows {
-  font-family: "Open Sans", sans-s;
+  font-family: "Open Sans", sans-serif;
   background: #f0f0f0;
 }
 .ui-windows button, .ui-windows .btn {
   outline: none;
-  font-family: "Open Sans", sans-s;
+  font-family: "Open Sans", sans-serif;
   font-size: 11px;
   color: #000000;
   background: #e1e1e1;
@@ -182,6 +182,47 @@ html {
 .ui-windows.button-non-default-focus button.default, .ui-windows.button-non-default-focus .btn.default {
   padding: 0 7px;
   border: #adadad solid 1px;
+}
+.ui-windows input {
+  outline: none;
+  font-family: "Open Sans", sans-serif;
+  font-size: 11px;
+  color: #000000;
+  background: #ffffff;
+  border: #adadad solid 1px;
+  border-radius: 0;
+  padding: 8px 4px;
+  min-width: 128px;
+  height: 21px;
+  position: relative;
+  -moz-transition: background 300ms, border-color 300ms;
+  -o-transition: background 300ms, border-color 300ms;
+  -webkit-transition: background 300ms, border-color 300ms;
+  transition: background 300ms, border-color 300ms;
+}
+.ui-windows input:hover {
+  border: #0078d7 solid 1px;
+}
+.ui-windows input:focus, .ui-windows input.default {
+  padding: 8px 4px;
+  border: #0078d7 solid 1px;
+}
+.ui-windows input.default:focus {
+  padding: 8px 4px;
+}
+.ui-windows input.default:active {
+  padding: 8px 4px;
+}
+.ui-windows input:active {
+  padding: 8px 4px;
+  border: #005499 solid 1px;
+}
+.ui-windows input:active:before {
+  border: #000000 dotted 1px;
+  top: 1px;
+  right: 1px;
+  bottom: 1px;
+  left: 1px;
 }
 
 /*# sourceMappingURL=platinui.win.css.map */
