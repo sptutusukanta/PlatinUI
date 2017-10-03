@@ -234,7 +234,7 @@ html {
   border-radius: 0;
   padding: 4px 4px;
   min-width: 128px;
-  height: 66px;
+  min-height: 66px;
   position: relative;
   overflow: scroll;
   -moz-transition: background 300ms, border-color 300ms;
