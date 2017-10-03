@@ -224,5 +224,47 @@ html {
   bottom: 1px;
   left: 1px;
 }
+.ui-windows textarea {
+  outline: none;
+  font-family: "Open Sans", sans-serif;
+  font-size: 11px;
+  color: #000000;
+  background: #ffffff;
+  border: #adadad solid 1px;
+  border-radius: 0;
+  padding: 4px 4px;
+  min-width: 128px;
+  min-height: 66px;
+  position: relative;
+  overflow: scroll;
+  -moz-transition: background 300ms, border-color 300ms;
+  -o-transition: background 300ms, border-color 300ms;
+  -webkit-transition: background 300ms, border-color 300ms;
+  transition: background 300ms, border-color 300ms;
+}
+.ui-windows textarea:hover {
+  border: #0078d7 solid 1px;
+}
+.ui-windows textarea:focus, .ui-windows textarea.default {
+  padding: 4px 4px;
+  border: #0078d7 solid 1px;
+}
+.ui-windows textarea.default:focus {
+  padding: 4px 4px;
+}
+.ui-windows textarea.default:active {
+  padding: 4px 4px;
+}
+.ui-windows textarea:active {
+  padding: 4px 4px;
+  border: #005499 solid 1px;
+}
+.ui-windows textarea:active:before {
+  border: #000000 dotted 1px;
+  top: 1px;
+  right: 1px;
+  bottom: 1px;
+  left: 1px;
+}
 
 /*# sourceMappingURL=platinui.win.css.map */
