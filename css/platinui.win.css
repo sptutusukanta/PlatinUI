@@ -195,10 +195,10 @@ html {
   min-width: 128px;
   height: 21px;
   position: relative;
-  -moz-transition: background 300ms, border-color 300ms;
-  -o-transition: background 300ms, border-color 300ms;
-  -webkit-transition: background 300ms, border-color 300ms;
-  transition: background 300ms, border-color 300ms;
+  -moz-transition: border-color 300ms;
+  -o-transition: border-color 300ms;
+  -webkit-transition: border-color 300ms;
+  transition: border-color 300ms;
 }
 .ui-windows input:hover {
   border: #0078d7 solid 1px;
@@ -223,6 +223,53 @@ html {
   right: 1px;
   bottom: 1px;
   left: 1px;
+}
+.ui-windows label {
+  display: inline-block;
+  margin-right: 30px;
+  position: relative;
+  vertical-align: middle;
+}
+.ui-windows label span {
+  margin-left: 25px;
+  display: block;
+  padding: 2px;
+}
+.ui-windows label span:before {
+  content: '';
+  height: 15px;
+  width: 15px;
+  border: 1px solid #000;
+  position: absolute;
+  top: 0px;
+  left: -3px;
+}
+.ui-windows label span:after {
+  content: '';
+  height: 5px;
+  width: 10px;
+  border-left: 1px solid #000000;
+  border-bottom: 1px solid #000000;
+  position: absolute;
+  top: 4px;
+  left: 0;
+  transform: rotate(-50deg);
+  display: none;
+}
+.ui-windows label input[type=checkbox] {
+  height: auto;
+  min-width: auto;
+  display: none;
+}
+.ui-windows label input[type=checkbox]:checked + span:after {
+  display: block;
+}
+.ui-windows label:focus {
+  outline: none;
+}
+.ui-windows label:focus span {
+  background-color: #0078D7;
+  color: #ffffff;
 }
 
 /*# sourceMappingURL=platinui.win.css.map */
