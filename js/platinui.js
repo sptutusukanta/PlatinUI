@@ -8,6 +8,7 @@
 
     $(document).ready(function () {
         ui_buttons();
+        ui_textarea();
     });
 
     var aKeys = [];
@@ -56,4 +57,33 @@
             }
         });
     }
+
+
+    function ui_textarea() {
+
+
+        $html.on('focus', 'textarea', function (e) {
+            //console.log('focus');
+            var $this = $(this);
+            if ($this.hasClass('default')) {
+                if ($html.hasClass('button-non-default-focus')) {
+                    $html.removeClass('button-non-default-focus');
+                }
+            } else {
+                if (!$html.hasClass('button-non-default-focus')) {
+                    $html.addClass('button-non-default-focus');
+                }
+            }
+        });
+
+        $html.on('blur', 'textarea', function () {
+            var $this = $(this);
+            if (!$this.hasClass('default')) {
+                if ($html.hasClass('button-non-default-focus')) {
+                    $html.removeClass('button-non-default-focus');
+                }
+            }
+        });
+    }
+
 })();
