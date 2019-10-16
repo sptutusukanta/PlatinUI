@@ -195,10 +195,10 @@ html {
   min-width: 128px;
   height: 21px;
   position: relative;
-  -moz-transition: background 300ms, border-color 300ms;
-  -o-transition: background 300ms, border-color 300ms;
-  -webkit-transition: background 300ms, border-color 300ms;
-  transition: background 300ms, border-color 300ms;
+  -moz-transition: border-color 300ms;
+  -o-transition: border-color 300ms;
+  -webkit-transition: border-color 300ms;
+  transition: border-color 300ms;
 }
 .ui-windows input:hover {
   border: #0078d7 solid 1px;
@@ -223,6 +223,13 @@ html {
   right: 1px;
   bottom: 1px;
   left: 1px;
+}
+.ui-windows textarea {
+  width: 150px !important;
+}
+.ui-windows textarea.default {
+  border: #0078d7 solid 1px;
+  font-family: "Open Sans", sans-serif;
 }
 
 /*# sourceMappingURL=platinui.win.css.map */

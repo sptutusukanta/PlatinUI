@@ -2,5 +2,6 @@
   font-family: $font-family-base;
   background: $color-base-background;
   @import "../partials/windows/_buttons";
-  @import "../partials/windows/_textinputs.scss"
+  @import "../partials/windows/_textinputs.scss";
+  @import "../partials/windows/textarea";
 }
